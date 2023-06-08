@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stages('Clonar el repositorio'){
+        stage('Clonar el repositorio'){
             steps {
                 git branch: 'main', credentialsId: 'git-jenkins', url: 'https://github.com/LeoMejia94/node-jenkins.git'
             }
 
         }
 
-        stages('Construir imagen de Docker'){
+        stage('Construir imagen de Docker'){
             steps{
             withCredentials([
                 string(credentialsId: 'MONGO_URI', variable: 'MONGO_URI')
@@ -18,7 +18,7 @@ pipeline {
             }
         }
 
-        stages('Desplegar contenedores Docker'){
+        stage('Desplegar contenedores Docker'){
             steps {
                 script {
                     withCredentials([
