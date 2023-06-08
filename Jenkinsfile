@@ -1,4 +1,4 @@
-pipeline {
+pipeline{
     agent any
 
     stages {
@@ -18,7 +18,7 @@ pipeline {
                 }
             }
         }
-        stage('Desplegar contenedores Docker'){
+        stage('Desplegar contenedor Docker'){
             steps {
                 script {
                     withCredentials([
