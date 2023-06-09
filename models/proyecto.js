@@ -1,5 +1,6 @@
 const { Schema, model} = require('mongoose')
 
+
 const ProyectoSchema = Schema({
     numero: {
         type: Number,

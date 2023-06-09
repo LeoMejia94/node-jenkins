@@ -20,4 +20,5 @@ const ClienteSchema = Schema({
     }
 })
 
+
 module.exports = model('Cliente', ClienteSchema)

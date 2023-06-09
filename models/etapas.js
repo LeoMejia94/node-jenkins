@@ -15,4 +15,6 @@ const EtapasSchema = Schema({
     }
 })
 
+
+
 module.exports = model('Etapas', EtapasSchema)

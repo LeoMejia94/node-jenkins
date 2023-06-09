@@ -6,7 +6,7 @@ const Universidad = require('../models/universidades')
 const Proyecto = require('../models/proyecto')
 
 
-// crear
+//  crear
 const createProyecto= async (req = request, 
     res = response) => {
     try{
